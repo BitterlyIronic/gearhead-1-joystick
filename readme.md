@@ -31,6 +31,13 @@ For controller support in SDL mode, type:
 
 	fpc -dSDLMODE -dJOYSTICK_SUPPORT gharena
 
+Or: 
+	```
+	cmake -B build .
+	cd ./build
+	make
+	```
+
 For the ASCII version, just type:
 
     fpc gharena
