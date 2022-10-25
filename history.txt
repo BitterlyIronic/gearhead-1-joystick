@@ -1,4 +1,4 @@
-1.310j   X X 2022
+1.311j   X X 2022
 - Somewhat sketchy controller support can be compiled in with -dJOYSTICK_SUPPORT (a lot of files)
     - Button bindings can be set during play, actions associated with buttons can be set in the config file.
 - Resolution selector added to Play Options (mostly for fullscreen mode) (sdlgfx.pp, ui4gh.pp)
