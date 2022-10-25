@@ -1478,6 +1478,7 @@ begin
 						end;
 					end;
 					SDL_VIDEORESIZE: ResizeScreen(event.resize.w, event.resize.h);
+					SDL_QUITEV:		 halt(0);
 					SDL_KEYDOWN: if event.key.keysym.sym = SDLK_ESCAPE then begin
 						quit := true;
 						break;

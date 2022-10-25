@@ -722,8 +722,10 @@ begin
 	repeat
 		{ Wait for events. }
 		if SDL_PollEvent( @event ) = 1 then begin
-			{ See if this event is a keyboard one... }
-			if event.type_ = SDL_KEYDOWN then begin
+			if event.type_ = SDL_QUITEV then begin
+				halt(0); { TODO: save before quitting? }
+			end else if event.type_ = SDL_KEYDOWN then begin
+				{ See if this event is a keyboard one... }
 				{ Check to see if it was an ASCII character we received. }
 				case event.key.keysym.sym of
 					SDLK_F1:    begin
