@@ -739,6 +739,8 @@ begin
 		Inc(N);
 		FindNext( F );
 	end;
+
+	FindClose(F);
 end;
 
 Function SelectFile( RPM: RPGMenuPtr; ReDrawer: RedrawProcedureType ): String;
