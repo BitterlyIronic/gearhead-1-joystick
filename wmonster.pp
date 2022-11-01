@@ -270,6 +270,8 @@ begin
 		FindNext( SRec );
 	end;
 
+	FindClose( SRec );
+
 	{ Error check- we don't want to return an empty list, }
 	{ but we will if we have to. }
 	if ( it = Nil ) and ( MVInfo <> '' ) then begin
