@@ -1469,7 +1469,7 @@ begin
 						{special case around the main analog stick}
 						if 	(event.jaxis.axis <> JoyXIndex)
 						and (event.jaxis.axis <> JoyYIndex) then begin
-							if abs(event.jaxis.value) > JOY_AxisCutoff then begin
+							if event.jaxis.value > JOY_AxisCutoff then begin
 								prevTicks := SDL_GetTicks;
 								num := event.jaxis.axis;
 								dir := Sgn(event.jaxis.value);

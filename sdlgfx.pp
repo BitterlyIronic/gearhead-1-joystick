@@ -771,7 +771,7 @@ begin
 				else if event.jaxis.axis = JoyYIndex then JoyYAxis := event.jaxis.value
 				else begin
 					ButtonState -= FindButtonSet(event.jaxis.axis, TYPE_AXIS);
-					if abs(event.jaxis.value) > JOY_AxisCutoff then
+					if event.jaxis.value > JOY_AxisCutoff then
 						Include(ButtonState, FindButton(event.jaxis.axis, TYPE_AXIS, Sgn(event.jaxis.value)));
 				end;
 
