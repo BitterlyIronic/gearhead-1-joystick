@@ -1,3 +1,5 @@
+- SetSceneFaction will delete NPCs is appropriate new home is not found
+
 1.311j   X X 2022
 - Somewhat sketchy controller support can be compiled in with -dJOYSTICK_SUPPORT (a lot of files)
     - Button bindings can be set during play, actions associated with buttons can be set in the config file.
